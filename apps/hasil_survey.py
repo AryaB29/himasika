@@ -4,7 +4,7 @@ import plotly as plot
 import streamlit as st
 import plotly.express as px
 
-data = pd.read_csv(r'apps\Survey Kepuasan Himasika ITS.csv')
+data = pd.read_csv('Survey Kepuasan Himasika ITS.csv')
 data_bersih = data.drop(columns=['S.NO','Submitted Time','17. Apa sih feedback mu terhadap Himasika, dan apa yang dapat dikembangkan dari Himasika Untuk Kedepannya'])
 a = data_bersih['1. Angkatan (Silahkan isi dengan tahun angkatan, contoh : 2018'].value_counts().index
 b = data_bersih['1. Angkatan (Silahkan isi dengan tahun angkatan, contoh : 2018'].value_counts().values
